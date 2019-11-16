@@ -4,7 +4,7 @@
        
 <!----===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Snack Deals</title>
 
 <!----=================== Mobile Phone Specific Meta's ======================== --->
 
@@ -41,6 +41,8 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 
+<link rel="stylesheet" href="css/Shop Cart.css">
+
 </head>
 
 <body class="goto-here">
@@ -53,7 +55,9 @@
 <div class="row d-flex">
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-     <span class="text">+0124000222</span>
+     <span class="text">+49 111 9992222</span>
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+     <span class="text">+04 4000444</span>
 </div>
      
 <div class="col-md pr-4 d-flex topper align-items-center">
@@ -119,16 +123,36 @@
 </div>
        </li>
        
-       <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
        
-          
+<!--- =========================== Mini Cart  ============================ --->
+
+<div class="mini-cart">
+    <button class="btn mini-cart-button"><span class="icon-shopping_cart"><span class="badge badge-notify shopping_cart-badge"></span></span></button>
 </div>
+
+<div class="mini-cart-container">
+<div class="mini-cart-items">
+    <ul>
+    </ul>
+    
+<div class="mini-cart-totals">
+<div id="total-price">
+    <p>Total Price</p>
+    <span> MYR0.00 </span>
+</div>
+
+<div id="total-items">
+    <p>Total Items</p>
+    <span> 0 </span>
+</div>
+</div>
+</div>
+</div>       
         
 </ul>
 </div>
 </div>
 </nav>
-
 
 <!--- ====================================== End of Navigation ========================================= --->
 
@@ -427,29 +451,6 @@
 
 <!--- ======================================  End of Snack & Beverage Section ==================================== --->
 
-<!--- ====================================== Subscribe Newsletter Section ========================================= --->
-<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
-<div class="container py-4">
-<div class="row d-flex justify-content-center py-5">
-<div class="col-md-6">
-     <h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-     <span>Get e-mail updates about our latest shops and special offers</span>
-</div>
-
-<div class="col-md-6 d-flex align-items-center">
-<form action="#" class="subscribe-form">
-<div class="form-group d-flex">
-     <input type="text" class="form-control" placeholder="Enter email address">
-     <input type="submit" value="Subscribe" class="submit px-3">
-</div>
-</form>
-</div>
-</div>
-</div>
-</section>
-
-<!--- ====================================== End of Subscribe Newsletter Section ========================================= --->
-
 
 <!--- ================================================= Footer Section =========================================================--->
 
@@ -514,8 +515,12 @@
      <h2 class="ftco-heading-2">Have a Questions?</h2>
 <div class="block-23 mb-3">
           <ul>
-          <li><span class="icon icon-map-marker"></span><span class="text">6 GundelBacher Str, Ensingen, Vaihingen An Der Enz</span></li>
-          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+012 40002222</span></a></li>
+          <li><span class="icon icon-map-marker"></span><span class="text">Gündelbacher Str. 16, 71665 Vaihingen an der Enz, Germany</span></li>
+          <br>
+          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+49 111 9992222</span></a></li>
+          
+          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
+          
           <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
@@ -539,7 +544,26 @@
 <!--- =============================================  End of Copyright   ====================================================== --->
 
 <!--- =================================================   End of Footer ====================================================== --->
-  
+
+
+<!--- ================================================== Start LiveChat Code ============================================================= --->
+
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 11413478;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/11413478/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+
+<!--- ================================================== End of LiveChat Code ============================================================= --->
+
 <!--- ================================================== Loader  ============================================================= --->
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -564,7 +588,7 @@
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 <script src="js/Login.js"></script>
-<script src="js/Cart.js"></script>
+<script src="js/Shop Cart.js"></script>
 <script src="js/bootstrap-show-password.js"></script>
 
 <!--- ================================================== End of Script's Source File  ============================================================ --->

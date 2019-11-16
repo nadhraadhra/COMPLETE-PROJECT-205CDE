@@ -4,7 +4,7 @@
        
 <!----===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Special Deals</title>
 
 <!----=================== Mobile Phone Specific Meta's ======================== --->
 
@@ -41,6 +41,8 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 
+<link rel="stylesheet" href="css/Shop Cart.css">
+
 </head>
 
 <body class="goto-here">
@@ -53,7 +55,9 @@
 <div class="row d-flex">
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-     <span class="text">+0124000222</span>
+     <span class="text">+49 111 9992222</span>
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+     <span class="text">+04 4000444</span>
 </div>
      
 <div class="col-md pr-4 d-flex topper align-items-center">
@@ -121,12 +125,53 @@
 </div>
        </li>
        
-       <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
        
-          
+<!--- =========================== Mini Cart  ============================ --->
+
+<div class="mini-cart">
+    <button class="btn mini-cart-button"><span class="icon-shopping_cart"><span class="badge badge-notify shopping_cart-badge"></span></span></button>
 </div>
+
+<div class="mini-cart-container">
+<div class="mini-cart-items">
+    <ul>
+    </ul>
+    
+<div class="mini-cart-totals">
+<div id="total-price">
+    <p>Total Price</p>
+    <span> MYR0.00 </span>
+</div>
+
+<div id="total-items">
+    <p>Total Items</p>
+    <span> 0 </span>
+</div>
+</div>
+</div>
+</div>       
         
 </ul>
 </div>
 </div>
 </nav>
+
+
+
+<!--- ================================================== Start LiveChat Code ============================================================= --->
+
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 11413478;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/11413478/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+
+<!--- ================================================== End of LiveChat Code ============================================================= --->

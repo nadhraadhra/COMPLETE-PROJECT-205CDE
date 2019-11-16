@@ -300,8 +300,8 @@ template {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
-    color: inherit
-}
+    /* color: inherit
+ */}
 
 .h1, h1 {
     font-size: 2.5rem

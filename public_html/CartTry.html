@@ -42,6 +42,7 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 
+<link rel="stylesheet" href="css/CartTry.css">
 </head>
 
 <body class="goto-here">
@@ -122,7 +123,27 @@
 </div>
        </li>
        
-       <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+ 
+  <!-- Mini Cart Starts Here -->
+    <div class="mini-cart">
+      <button class="btn mini-cart-button"><span class="icon-shopping_cart"></span></button>
+    </div>
+    <div class="mini-cart-container">
+      <div class="mini-cart-items">
+        <ul>
+        </ul>
+        <div class="mini-cart-totals">
+          <div id="total-price">
+            <p>Total Price</p>
+            <span> MYR0.00 </span>
+          </div>
+          <div id="total-items">
+            <p>Total Items</p>
+            <span> 0 </span>
+          </div>
+        </div>
+      </div>
+    </div>
        
           
 </div>
@@ -145,6 +166,109 @@
 </div>
 </div>
 </div>
+</div>
+
+<div class="container-fluid">
+
+  <!-- Mini Cart Ends Here -->  
+  
+  </div>
+  
+    <!-- Product Grid -->
+    <div class="row justify-product-grid bg-black">
+      
+      <!-- START The Product Item -->
+      <div class="col-md-4 col-sm-4 grid-item center">
+          
+        <img src="http://www.jarrow.com/productImg2/KETO.jpg" alt="" />
+        <h1 class="product-title">7-Keto DHEA 100 mg</h1>
+        <h3 class="product-price">$12.99</h3>
+        <div class="quantity-input">
+          <input class="minus btn" type="button" value="-">
+          <input id="text_7_keto_dhea" value="1" class="input-text qty text" size="4"/>
+          <input class="plus btn" type="button" value="+">
+        </div>
+        <button class="btn btn-success add-to-cart-button" rel="7_keto_dhea" product="7-Keto DHEA 100 mg" sel="12.99"><span class="glyphicon glyphicon-ok"></span> Add to Cart</button>
+      </div>
+      <!-- END!! The Product Item -->
+      
+      <!-- START The Product Item -->
+      <div class="col-md-4 col-sm-4 grid-item">
+        <img src="image/FT1.png" alt="" />
+        <h1 class="product-title">F1</h1>
+        <h3 class="prodcut-price">MYR19.99</h3>
+        <div class="quantity-input">
+          <input class="minus btn" type="button" value="-">
+          <input id="text_f1" value="1" class="input-text qty text" size="4"/>
+          <input class="plus btn" type="button" value="+">
+        </div>
+        <button class="btn btn-success add-to-cart-button" rel="f1" product="F1" sel="19.99"><span class="glyphicon glyphicon-ok"></span> Add to Cart</button>
+      </div>
+      <!-- END!! The Product Item -->
+      
+      <!-- START The Product Item -->
+      <div class="col-md-4 col-sm-4 grid-item">
+        <img src="http://www.jarrow.com/productImg2/CHRY.jpg" alt="" />
+        <h1 class="product-title">Chrysin 500 mg</h1>
+        <h3 class="prodcut-price">$24.99</h3>
+        <div class="quantity-input">
+          <input class="minus btn" type="button" value="-">
+          <input id="text_chrysin_500_mg" value="1" class="input-text qty text" size="4"/>
+          <input class="plus btn" type="button" value="+">
+        </div>
+        <button class="btn btn-success add-to-cart-button" rel="chrysin_500_mg" product="Chrysin 500 mg" sel="24.99" ><span class="glyphicon glyphicon-ok"></span> Add to Cart</button>
+      </div>
+      
+      
+          <!-- Product Grid -->
+    <div class="row justify-product-grid bg-black">
+      
+      <!-- START The Product Item -->
+      <div class="col-md-4 col-sm-4 grid-item center">
+          
+        <img src="http://www.jarrow.com/productImg2/KETO.jpg" alt="" />
+        <h1 class="product-title">7-Keto DHEA 100 mg</h1>
+        <h3 class="product-price">$12.99</h3>
+        <div class="quantity-input">
+          <input class="minus btn" type="button" value="-">
+          <input id="text_7_keto_dhea" value="1" class="input-text qty text" size="4"/>
+          <input class="plus btn" type="button" value="+">
+        </div>
+        <button class="btn btn-success add-to-cart-button" rel="7_keto_dhea" product="7-Keto DHEA 100 mg" sel="12.99"><span class="glyphicon glyphicon-ok"></span> Add to Cart</button>
+      </div>
+      <!-- END!! The Product Item -->
+      
+      <!-- START The Product Item -->
+      <div class="col-md-4 col-sm-4 grid-item">
+        <img src="http://www.jarrow.com/productImg2/TRIB.jpg" alt="" />
+        <h1 class="product-title">Tribulus Complex</h1>
+        <h3 class="prodcut-price">$19.99</h3>
+        <div class="quantity-input">
+          <input class="minus btn" type="button" value="-">
+          <input id="text_tribulus" value="1" class="input-text qty text" size="4"/>
+          <input class="plus btn" type="button" value="+">
+        </div>
+        <button class="btn btn-success add-to-cart-button" rel="tribulus" product="Tribulus Complex" sel="19.99"><span class="glyphicon glyphicon-ok"></span> Add to Cart</button>
+      </div>
+      <!-- END!! The Product Item -->
+      
+      <!-- START The Product Item -->
+      <div class="col-md-4 col-sm-4 grid-item">
+        <img src="http://www.jarrow.com/productImg2/CHRY.jpg" alt="" />
+        <h1 class="product-title">Chrysin 500 mg</h1>
+        <h3 class="prodcut-price">$24.99</h3>
+        <div class="quantity-input">
+          <input class="minus btn" type="button" value="-">
+          <input id="text_chrysin_500_mg" value="1" class="input-text qty text" size="4"/>
+          <input class="plus btn" type="button" value="+">
+        </div>
+        <button class="btn btn-success add-to-cart-button" rel="chrysin_500_mg" product="Chrysin 500 mg" sel="24.99" ><span class="glyphicon glyphicon-ok"></span> Add to Cart</button>
+      </div>
+      
+      <!-- END!! The Product Item -->
+      <div class="succes-message">Item Succesfully Added to Cart</div>
+    </div>
+
 </div>
 
 
@@ -235,8 +359,8 @@
 
 <div class="row">
 <div class="col-md-12 text-center">
-     <h7>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank">Nadhrah</a>
-     </h7>
+     <h6>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank">Nadhrah</a>
+     </h6>
 </div>
 </div>
 </div>

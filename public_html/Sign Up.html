@@ -4,7 +4,7 @@
        
 <!----===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Sign Up</title>
 
 <!----=================== Mobile Phone Specific Meta's ======================== --->
 
@@ -51,6 +51,8 @@
 <link rel="stylesheet" type="text/css" href="css/login.css">
 <link rel="stylesheet" href="/examples/css/form-style.css">
 
+<link rel="stylesheet" href="css/Shop Cart.css">
+
 </head>
 
 <body class="goto-here">
@@ -64,7 +66,9 @@
 <div class="row d-flex">
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-     <span class="text">+0124000222</span>
+     <span class="text">+49 111 9992222</span>
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+     <span class="text">+04 4000444</span>
 </div>
      
 <div class="col-md pr-4 d-flex topper align-items-center">
@@ -132,10 +136,31 @@
 </div>
        </li>
        
-       <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
        
-          
+<!--- =========================== Mini Cart  ============================ --->
+
+<div class="mini-cart">
+    <button class="btn mini-cart-button"><span class="icon-shopping_cart"><span class="badge badge-notify shopping_cart-badge"></span></span></button>
 </div>
+
+<div class="mini-cart-container">
+<div class="mini-cart-items">
+    <ul>
+    </ul>
+    
+<div class="mini-cart-totals">
+<div id="total-price">
+    <p>Total Price</p>
+    <span> MYR0.00 </span>
+</div>
+
+<div id="total-items">
+    <p>Total Items</p>
+    <span> 0 </span>
+</div>
+</div>
+</div>
+</div>       
         
 </ul>
 </div>
@@ -143,35 +168,35 @@
 </nav>
 
 
-
 <!--- ======================================== Start Sign Up Form Section ============================================= --->
+
 
 <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-black">
 <div class="col-md-12 heading-section text-center ftco-animate">
      <h2 class="mb-4">Sign Up</h2>
 
 </div>
-<form name="signupForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post">
+<form name="signupForm" onsubmit="return validateForm()" action="Sign Up.html" method="post">
 
-<div class="row">
-     <label>Full Name</label>
-     <input type="text" name="name">
-<div class="error" id="nameErr"></div>
+<div class="input-group">
+     <label>Username</label>
+     <input type="text" name="username">
+<div class="error" id="usernameErr"></div>
 </div>
 
-<div class="row">
+<div class="input-group">
      <label>Email Address</label>
      <input type="text" name="email">
 <div class="error" id="emailErr"></div>
 </div>
 
-<div class="row">
+<div class="input-group">
      <label>Mobile Number</label>
-     <input type="text" name="mobile" maxlength="11">
+     <input type="text" name="mobile" maxlength="12">
      <div class="error" id="mobileErr"></div>
 </div>
 
-<div class="row">
+<div class="input-group">
      <label>Country</label>
      <select name="country">
           <option>Select</option>
@@ -187,18 +212,9 @@
      
 <div class="error" id="countryErr"></div>
 </div>
-<div class="row">
-     <label>Gender</label> 
 
-<div class="form-inline">
-     <label><input type="radio" name="gender" value="male"> Male</label>
-     <label><input type="radio" name="gender" value="female"> Female</label>
-</div>
      
-<div class="error" id="genderErr"></div>
-</div>
-     
-<div class="row">
+<div class="input-group">
      <label>Password</label>
      <input type="password" name="password" maxlength="25" data-toggle="password">
      
@@ -206,22 +222,24 @@
 
 </div>
      
-<div class="row">
+<div class="input-group">
      <label>Confirm Password</label>
      <input type="password" name="confirmPassword" maxlength="25" data-toggle="password">
      
 <div class="error" id="confirmPasswordErr"></div>
+
 </div>
 
-
-
-<div class="row">
-     <input type="submit" value="Submit">
+    <br>
+<div class="input-group">
+    <input type="submit" name="login" class="btn"</input>
 </div>
-     
-<div class="row">
-     <input type="button" value="Cancel" onClick="window.location='http://yoursite.com/index.php';" />
-</div>
+
+    <br><br>
+    <h6 style="text-align: center">
+        Already have an account? <a href="Login.html">Sign in</a>
+    </h6>
+    
 </form>
 </section>
 
@@ -290,8 +308,12 @@
      <h2 class="ftco-heading-2">Have a Questions?</h2>
 <div class="block-23 mb-3">
           <ul>
-          <li><span class="icon icon-map-marker"></span><span class="text">6 GundelBacher Str, Ensingen, Vaihingen An Der Enz</span></li>
-          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+012 40002222</span></a></li>
+          <li><span class="icon icon-map-marker"></span><span class="text">Gündelbacher Str. 16, 71665 Vaihingen an der Enz, Germany</span></li>
+          <br>
+          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+49 111 9992222</span></a></li>
+          
+          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
+          
           <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
@@ -317,7 +339,26 @@
  
 
 <!--- =================================================   End of Footer ====================================================== --->
-  
+
+
+<!--- ================================================== Start LiveChat Code ============================================================= --->
+
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 11413478;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/11413478/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+
+<!--- ================================================== End of LiveChat Code ============================================================= --->
+
 <!--- ================================================== Loader  ============================================================= --->
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -343,7 +384,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <script src="js/Login.js"></script>
-<script src="js/Cart.js"></script>
+<script src="js/Shop Cart.js"></script>
 <script src="js/Sign Up.js"></script>
 <script src="js/bootstrap-show-password.js"></script>
 

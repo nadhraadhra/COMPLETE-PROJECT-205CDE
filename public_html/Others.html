@@ -4,7 +4,7 @@
        
 <!----===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Others</title>
 
 <!----=================== Mobile Phone Specific Meta's ======================== --->
 
@@ -42,6 +42,8 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 
+<link rel="stylesheet" href="css/Shop Cart.css">
+
 </head>
 
 <body class="goto-here">
@@ -54,7 +56,9 @@
 <div class="row d-flex">
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-     <span class="text">+0124000222</span>
+     <span class="text">+49 111 9992222</span>
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+     <span class="text">+04 4000444</span>
 </div>
      
 <div class="col-md pr-4 d-flex topper align-items-center">
@@ -120,17 +124,36 @@
 </div>
        </li>
        
-       <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
        
-          
+<!--- =========================== Mini Cart  ============================ --->
+
+<div class="mini-cart">
+    <button class="btn mini-cart-button"><span class="icon-shopping_cart"><span class="badge badge-notify shopping_cart-badge"></span></span></button>
 </div>
+
+<div class="mini-cart-container">
+<div class="mini-cart-items">
+    <ul>
+    </ul>
+    
+<div class="mini-cart-totals">
+<div id="total-price">
+    <p>Total Price</p>
+    <span> MYR0.00 </span>
+</div>
+
+<div id="total-items">
+    <p>Total Items</p>
+    <span> 0 </span>
+</div>
+</div>
+</div>
+</div>       
         
 </ul>
 </div>
 </div>
 </nav>
-
-
 
 <!--- ====================================== End of Navigation ========================================= --->
 
@@ -170,31 +193,34 @@
      
 <!--- **************************************** 1 Container *********************************** --->
 
-<div class="col-md-6 col-lg-3 ftco-animate">
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/CE.jpg" alt="Tomyam">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/ori.png" alt="Tomyam">
      <span class="status">20%</span>
+     
 <div class="overlay"></div>
      </a>
 <div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Maggi Tom Yumzz</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span class="mr-2 price-dc">MYR3.60</span><span class="price-sale">MYR2.88</span></p>
+     <h3 class="product-title">Perrier Mineral Water</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="mr-2 price-dc">MYR3.60</span><span class="product-price">MYR2.88</span></p>
 </div>
 </div>
      
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_ori" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="ori" product="Perrier Mineral Water" sel="3.60">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -202,30 +228,33 @@
 </div>
 
 <!--- ****************************************  2 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/ori.png" alt="Perrier Drinking Water">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/grape.png" alt="Perrier Drinking Water">
 <div class="overlay"></div>
      </a>
+    
 <div class="text py-3 pb-4 px-3 text-center">
-          <h3><a href="#">Perrier Mineral Water</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR3.60</span></p>
+          <h3 class="product-title">Perrier Mineral Grape</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR3.60</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_p-grape" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="p-grape" product="Pierrer Mineral Grape" sel="3.60">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -233,30 +262,33 @@
 </div>
 
 <!--- **************************************** 3 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/green.png" alt="Green Apple">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/green.png" alt="Perrier Drinking Water">
 <div class="overlay"></div>
      </a>
+    
 <div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Perrier Apple Mineral</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR3.60</span></p>
+          <h3 class="product-title">Perrier Mineral Apple</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR3.60</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_p-apple" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="p-apple" product="Pierrer Mineral Apple" sel="3.60">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -264,30 +296,34 @@
 </div>
 
 <!--- **************************************** 4 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/grape.png" alt="Pierre Grapefruit">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/ori.png" alt="Perrier Drinking Water">
 <div class="overlay"></div>
      </a>
+    
 <div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Pierre Grape Mineral</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR3.60</span></p>
+          <h3 class="product-title">Perrier Mineral Water</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR3.60</span></p>
 </div>
 </div>
      
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_ayambakar" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="ayambakar" product="Maggi Ayam Bakar" sel="3.60">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -295,31 +331,34 @@
 </div>
 
 <!--- **************************************** 5 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
      <a href="#" class="img-prod"><img class="img-fluid" src="image/cucumber.png" alt="Spindrift Cucumber">
           
 <div class="overlay"></div>
      </a>
+    
 <div class="text py-3 pb-4 px-3 text-center">    						
-     <h3><a href="#">Spindrift Cucumber Water</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span class="price-sale">MYR4.50</span></p>
+     <h3 class="product-title">Spindrift Cucumber Water</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR2.80</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_cucumber" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="cucumber" product="Spindrift Cucumber Water" sel="2.80">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -329,30 +368,34 @@
 
 <!--- ****************************************  6 Container *********************************** --->
 
-<div class="col-md-6 col-lg-3 ftco-animate">
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
      <a href="#" class="img-prod"><img class="img-fluid" src="image/raspberry.png" alt="Spindrift Raspberry">
+          
 <div class="overlay"></div>
      </a>
-<div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Spindrift Raspberry Water</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR7.00</span></p>
+    
+<div class="text py-3 pb-4 px-3 text-center">    						
+     <h3 class="product-title">Spindrift Raspberry Water</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR2.80</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_rspberry" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="raspberry" product="Spindrift Raspberry Water" sel="2.80">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -360,30 +403,35 @@
 </div>
 
 <!--- ****************************************  7 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/lime.png" alt="Spindrift Lime">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/lime.png" alt="Spindrift lime">
+          
 <div class="overlay"></div>
      </a>
-<div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Spindrift Lime Carbonate Water<a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR4.50</span></p>
+    
+<div class="text py-3 pb-4 px-3 text-center">    						
+     <h3 class="product-title">Spindrift Lime Carbonate Water</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR2.80</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_lime" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="lime" product="Spindrift Lime Carbonate Water" sel="2.80">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -391,30 +439,35 @@
 </div>
 
 <!--- **************************************** 8 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
      <a href="#" class="img-prod"><img class="img-fluid" src="image/cranberry.png" alt="Spindrift Cranberry">
+          
 <div class="overlay"></div>
      </a>
-<div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Spindrift Cranberry Water</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR4.50</span></p>
+    
+<div class="text py-3 pb-4 px-3 text-center">    						
+     <h3 class="product-title">Spindrift Cranberry Water</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR2.80</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_cranberry" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="cranberry" product="Spindrift Cranberry Water" sel="2.80">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -422,30 +475,35 @@
 </div>
 
 <!--- **************************************** 9 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/waterlo.png" alt="Waterloo Original Sparkling Water">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/cheetos4.png" alt="Cheetos Crunchy XXTRA HOT">
+          
 <div class="overlay"></div>
      </a>
-<div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Waterloo Ori Sparkling</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span class="price-sale">MYR2.50</span></p>
+    
+<div class="text py-3 pb-4 px-3 text-center">    						
+     <h3 class="product-title">Cheetos Crunchy XXTRA HOT</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR4.00</span></p>
 </div>
 </div>
      
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_c-xxtra" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="c-xxtra" product="Cheetos Crunchy XXTRA HOT" sel="4.00">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -453,30 +511,34 @@
 </div>
 
 <!--- **************************************** 10 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/CE.jpg" alt="Maggi Letup Curry ">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/cheetos1.png" alt="Cheetos Crunchy Cheese ">
 <div class="overlay"></div>
      </a>
+    
 <div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="">Maggi Letup Curry</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR2.50</span></p>
+     <h3 class="product-title">Cheetos Crunchy Cheese</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR4.00</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_c-cheese" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="c-cheese" product="Cheetos Crunchy Cheese" sel="4.00">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -484,30 +546,34 @@
 </div>
 
 <!--- **************************************** 11 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/CE.jpg" alt="FT Maggi Asam Laksa">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/cheetos2.png" alt="Cheetos Crunchy Flamin ">
 <div class="overlay"></div>
      </a>
+    
 <div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Maggi Asam Laksa</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR2.50</span></p>
+     <h3 class="product-title">Cheetos Crunchy Flamin</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR4.00</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_c-flamin" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="c-flamin" product="Cheetos Crunchy Flamin" sel="4.00">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -515,30 +581,34 @@
 </div>
 
 <!--- **************************************** 12 Container *********************************** --->
-<div class="col-md-6 col-lg-3 ftco-animate">
+
+<div class="col-md-6 col-lg-3 grid-item ftco-animate">
 <div class="product">
-     <a href="#" class="img-prod"><img class="img-fluid" src="image/CE.jpg" alt="Maggi Goreng Cili Fiesta">
+     <a href="#" class="img-prod"><img class="img-fluid" src="image/cheetos3.png" alt="Cheetos Crunchy Mix ">
 <div class="overlay"></div>
      </a>
+    
 <div class="text py-3 pb-4 px-3 text-center">
-     <h3><a href="#">Maggi Fried Fiesta</a></h3>
-<div class="d-flex">
-<div class="pricing">
-     <p class="price"><span>MYR2.50</span></p>
+     <h3 class="product-title">Cheetos Crunchy Mix 2 Flavour</a></h3>
+<div class="d-flex-center">
+<div class="product-price">
+     <p class="price"><span class="product-price">MYR4.00</span></p>
 </div>
 </div>
-
+     
 <div class="bottom-area d-flex px-3">
 <div class="m-auto d-flex">
-     <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-     <span><i class="ion-ios-menu"></i></span>
-     </a>
-     <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+    
+<div class="quantity-input">
+    <input class="minus btn d-flex justify-content-center align-items-center mx-1" type="button" value="-">
+    <input id="text_c-mix" value="1" class="input-text qty text" size="4"/>
+    <input class="plus btn d-flex  align-items-center mx-1" type="button" value="+">
+</div>
+      
+     <button class="btn btn-success add-to-cart-button " rel="c-mix" product="Cheetos Crunchy Mix" sel="4.00">
      <span><i class="ion-ios-cart"></i></span>
-     </a>
-     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-     <span><i class="ion-ios-heart"></i></span>
-     </a>
+     </button>
+
 </div>
 </div>
 </div>
@@ -567,29 +637,6 @@
 
 
 <!--- ======================================  End of Snack & Beverage Section ==================================== --->
-
-<!--- ====================================== Subscribe Newsletter Section ========================================= --->
-<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
-<div class="container py-4">
-<div class="row d-flex justify-content-center py-5">
-<div class="col-md-6">
-     <h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-     <span>Get e-mail updates about our latest shops and special offers</span>
-</div>
-
-<div class="col-md-6 d-flex align-items-center">
-<form action="#" class="subscribe-form">
-<div class="form-group d-flex">
-     <input type="text" class="form-control" placeholder="Enter email address">
-     <input type="submit" value="Subscribe" class="submit px-3">
-</div>
-</form>
-</div>
-</div>
-</div>
-</section>
-
-<!--- ====================================== End of Subscribe Newsletter Section ========================================= --->
 
 
 <!--- ================================================= Footer Section =========================================================--->
@@ -655,8 +702,12 @@
      <h2 class="ftco-heading-2">Have a Questions?</h2>
 <div class="block-23 mb-3">
           <ul>
-          <li><span class="icon icon-map-marker"></span><span class="text">6 GundelBacher Str, Ensingen, Vaihingen An Der Enz</span></li>
-          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+012 40002222</span></a></li>
+          <li><span class="icon icon-map-marker"></span><span class="text">Gündelbacher Str. 16, 71665 Vaihingen an der Enz, Germany</span></li>
+          <br>
+          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+49 111 9992222</span></a></li>
+          
+          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
+          
           <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
@@ -680,7 +731,24 @@
 <!--- =============================================  End of Copyright   ====================================================== --->
 
 <!--- =================================================   End of Footer ====================================================== --->
-  
+
+<!--- ================================================== Start LiveChat Code ============================================================= --->
+
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 11413478;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/11413478/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+
+<!--- ================================================== End of LiveChat Code ============================================================= --->  
 <!--- ================================================== Loader  ============================================================= --->
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -705,7 +773,7 @@
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 <script src="js/Login.js"></script>
-<script src="js/Cart.js"></script>
+<script src="js/Shop Cart.js"></script>
 <script src="js/bootstrap-show-password.js"></script>
 
 <!--- ================================================== End of Script's Source File  ============================================================ --->

@@ -4,7 +4,7 @@
        
 <!----===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Checkout</title>
 
 <!----=================== Mobile Phone Specific Meta's ======================== --->
 
@@ -41,6 +41,12 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 
+<link rel="stylesheet" href="css/Shop Cart.css">
+<link rel="stylesheet" href="css/paymentMethod.css">
+
+
+
+
 </head>
 
 <body class="goto-here">
@@ -53,7 +59,9 @@
 <div class="row d-flex">
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-     <span class="text">+0124000222</span>
+     <span class="text">+49 111 9992222</span>
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+     <span class="text">+04 4000444</span>
 </div>
      
 <div class="col-md pr-4 d-flex topper align-items-center">
@@ -121,22 +129,42 @@
 </div>
        </li>
        
-       <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
        
-          
+<!--- =========================== Mini Cart  ============================ --->
+
+<div class="mini-cart">
+    <button class="btn mini-cart-button"><span class="icon-shopping_cart"><span class="badge badge-notify shopping_cart-badge"></span></span></button>
 </div>
+
+<div class="mini-cart-container">
+<div class="mini-cart-items">
+    <ul>
+    </ul>
+    
+<div class="mini-cart-totals">
+<div id="total-price">
+    <p>Total Price</p>
+    <span> MYR0.00 </span>
+</div>
+
+<div id="total-items">
+    <p>Total Items</p>
+    <span> 0 </span>
+</div>
+</div>
+</div>
+</div>       
         
 </ul>
 </div>
 </div>
 </nav>
 
-
 <!--- ====================================== End of Navigation ========================================= --->
 
 <!--- ======================================   Hero Part  ==================================== --->
 
-<div class="hero-wrap hero-bread" style="background-image: url('image/cocaCola.jpg');">
+<div class="hero-wrap hero-bread" style="background-image: url('image/bg4.jpg');">
 <div class="container">
 <div class="row no-gutters slider-text align-items-center justify-content-center">
 <div class="col-md-9 ftco-animate text-center">
@@ -154,20 +182,21 @@
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-xl-7 ftco-animate">
-<form action="#" class="billing-form">
+    
+<form name="checkoutForm" action="/submit.php" onsubmit="return checkoutForm()"class="billing-form" method="post">
      <h3 class="mb-4 billing-heading">Billing Details</h3>
 <div class="row align-items-end">
 <div class="col-md-6">
 <div class="form-group">
      <label for="firstname">First Name</label>
-     <input type="text" class="form-control" placeholder="First Name">
+     <input type="text" name="Firs Name" class="form-control">
 </div>
 </div>
      
 <div class="col-md-6">
 <div class="form-group">
      <label for="lastname">Last Name</label>
-     <input type="text" class="form-control" placeholder="Last Name">
+     <input type="text" name="name" class="form-control">
 </div>
 </div>
      
@@ -197,7 +226,7 @@
 <div class="col-md-6">
 <div class="form-group">
      <label for="streetaddress">Street Address</label>
-     <input type="text" class="form-control" placeholder="House number and street name">
+     <input type="text" name="address" class="form-control">
 </div>
 </div>
 
@@ -225,14 +254,14 @@
 <div class="col-md-6">
 <div class="form-group">
      <label for="phone">Phone</label>
-     <input type="text" class="form-control" placeholder="0112020202">
+     <input type="text" name="phone" class="form-control">
 </div>
 </div>
 
 <div class="col-md-6">
 <div class="form-group">
      <label for="emailaddress">Email Address</label>
-     <input type="text" class="form-control" placeholder="edrivethruvending@gmail.com">
+     <input type="text" name="email" class="form-control" placeholder="edrivethruvending@gmail.com">
 </div>
 </div>
 
@@ -278,12 +307,12 @@
 
 <!--- ************************************** Payment Method Part *************************************************  --->
 <div class="col-md-12">
-<div class="cart-detail p-3 p-md-4">
+<div class="cart-detail p-3 p-md-4" role="dialog" aria-hidden="true">
      <h3 class="billing-heading mb-4">Payment Method</h3>
 <div class="form-group">
 <div class="col-md-12">
-<div class="radio">
-     <label><input type="radio" name="optradio" class="mr-2"> Direct Bank Transfer</label>
+<div class="radio-inline">
+     <label><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Select your e-wallet (BigPay/Touch n' go and etc)" class="mr-2"> E-Wallet </label>
 </div>
 </div>
 </div>
@@ -291,15 +320,7 @@
 <div class="form-group">
 <div class="col-md-12">
 <div class="radio">
-     <label><input type="radio" name="optradio" class="mr-2"> Check Payment</label>
-</div>
-</div>
-</div>
-
-<div class="form-group">
-<div class="col-md-12">
-<div class="radio">
-     <label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
+     <label><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Insert your detail of card/ debit card" class="mr-2"> Credit or debit card</label>
 </div>
 </div>
 </div>
@@ -311,7 +332,7 @@
 </div>
 </div>
 </div>
-     <p><a href="#"class="btn btn-primary py-3 px-4">Place an order</a></p>
+     <p><a href="Thank You.html"class="btn btn-primary py-3 px-4">Place an order</a></p>
 </div>
 </div>
 </div>
@@ -319,30 +340,6 @@
 </div>
 </div>
 </section> 
-
-
-
-<!--- ====================================== Subscribe Newsletter Section ========================================= --->
-<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
-<div class="container py-4">
-<div class="row d-flex justify-content-center py-5">
-<div class="col-md-6">
-        <h2 style="font-size: 22px;" class="mb-0">Subscribes to our Newsletter and Get Latest Update!</h2>
-</div>
-
-<div class="col-md-6 d-flex align-items-center">
-<form action="#" class="subscribe-form">
-<div class="form-group d-flex">
-     <input type="text" class="form-control" placeholder="Enter email address">
-     <input type="submit" value="Subscribe" class="submit px-3">
-</div>
-</form>
-</div>
-</div>
-</div>
-</section>
-
-<!--- ====================================== End of Subscribe Newsletter Section ========================================= --->
 
 
 <!--- ================================================= Footer Section =========================================================--->
@@ -394,7 +391,7 @@
      
           <ul class="list-unstyled">
           <li><a href="#" class="py-2 d-block">FAQs</a></li>
-          <li><a href="#" class="py-2 d-block">Contact</a></li>
+          <li><a href="Contact Us.html" class="py-2 d-block">Contact</a></li>
           </ul>
 </div>
 </div>
@@ -408,8 +405,12 @@
      <h2 class="ftco-heading-2">Have a Questions?</h2>
 <div class="block-23 mb-3">
           <ul>
-          <li><span class="icon icon-map-marker"></span><span class="text">6 GundelBacher Str, Ensingen, Vaihingen An Der Enz</span></li>
-          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+012 40002222</span></a></li>
+          <li><span class="icon icon-map-marker"></span><span class="text">Gündelbacher Str. 16, 71665 Vaihingen an der Enz, Germany</span></li>
+          <br>
+          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+49 111 9992222</span></a></li>
+          
+          <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
+          
           <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
@@ -432,7 +433,26 @@
 <!--- =============================================  End of Copyright   ====================================================== --->
 
 <!--- =================================================   End of Footer ====================================================== --->
-  
+
+
+<!--- ================================================== Start LiveChat Code ============================================================= --->
+
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 11413478;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/11413478/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+
+<!--- ================================================== End of LiveChat Code ============================================================= --->
+
 <!--- ================================================== Loader  ============================================================= --->
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -458,45 +478,22 @@
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 <script src="js/Login.js"></script>
-<script src="js/Cart.js"></script>
+<script src="js/Shop Cart.js"></script>
 <script src="js/bootstrap-show-password.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/paymentMethod.js"></script>
+<script src="js/checkout.js"></script>
 
-  <script>
-		$(document).ready(function(){
 
-		var quantitiy=0;
-		   $('.quantity-right-plus').click(function(e){
-		        
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        var quantity = parseInt($('#quantity').val());
-		        
-		        // If is not undefined
-		            
-		            $('#quantity').val(quantity + 1);
+<script>
 
-		          
-		            // Increment
-		        
-		    });
 
-		     $('.quantity-left-minus').click(function(e){
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        var quantity = parseInt($('#quantity').val());
-		        
-		        // If is not undefined
-		      
-		            // Increment
-		            if(quantity>0){
-		            $('#quantity').val(quantity - 1);
-		            }
-		    });
-		    
-		});
-	</script>
+$('input[type=radio]').click(function() {
+  alert($(this).val());
+});
+
+</script>
 
 <!--- ================================================== End of Script's Source File  ============================================================ --->   
 

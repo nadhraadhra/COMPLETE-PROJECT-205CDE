@@ -87,7 +87,7 @@ function validateForm()
     if(message == "") {
         printError("messageErr", "Please enter your message");
     } else {
-        var regex = /^[a-zA-Z\s]+$/;                
+        var regex = /^[a-zA-Z0-9]*$/;                
         if(regex.test(message) === false) {
             printError("messageErr", "Please enter a valid message");
         } else {
