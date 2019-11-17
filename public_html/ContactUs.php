@@ -1,11 +1,65 @@
-<?php?>
+   
+<?php 
+
+session_start();
+
+$conn = mysqli_connect('localhost','root','root');
+
+mysqli_select_db($conn, 'edrivethruvending');
+
+//Check For Submission
+if(isset($_POST['submit'])){
+    
+    //Modify
+    
+    $sqli1 = "SELECT * FROM contactUs WHERE name='". $_POST['name'] ."';";
+    
+    $conn = NULL;
+    $error = false;
+    
+    if($conn = mysqli_connect('localhost','root','root','edrivethruvending')) {
+        if($result = mysqli_query($conn,$sql)) {
+            if(mysqli_num_rows($result) == 1) {
+                $error = true;
+                
+            }
+        }
+    }
+    
+    if($error) {
+        
+  
+        exit('a');
+        
+    } else {
+        
+        //Store User Credentials Details
+        
+        $sqli1 = "INSERT INTO contactUs (id, name, email, mobile, country, message) VALUES (NULL,'". $_POST['name'] ."', '". $_POST['email'] ."', '". $_POST['mobile'] ."', '". $_POST['country'] ."', '". $_POST['message'] ."');";
+        
+        if(mysqli_query($conn, $sqli1)) {
+            
+            //Successfully Registered
+            
+            header('location: ContactUs.php');
+            exit();
+            
+        }
+    }
+    header('location: ContactUs.php');
+}
+
+?>
+
+<!----=============================================== End of PHP Code ================================================== --->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
        
 <!---- ===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Contact Us</title>
 
 <!---- =================== Mobile Phone Specific Meta's ======================== --->
 
@@ -60,12 +114,14 @@
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
      <span class="text">+49 111 9992222</span>
+     
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+     <span class="text">+04 4000444</span>
 </div>
      
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-     <span class="text">edrivethruvending@email.com</span>
-</div>
+<a href="mailto:edrivethruvending@email.com subject= subject text"><span class="text">edrivethruvending@email.com</span></a>
      
     <li class="ftco-animate"><a href="https://twitter.com"><span class="icon-twitter"></span></a></li>
     <li class="ftco-animate"><a href="https://www.facebook.com"><span class="icon-facebook"></span></a></li>
@@ -219,7 +275,7 @@
 <div class="col-md-6 order-md-last d-flex">
 
 </div>
-<form name="contactForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post">
+<form name="contactForm" onsubmit="return validateForm()" method="post">
 
 <div class="row">
      <label>Name</label>
@@ -354,7 +410,7 @@
           <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
           
           
-          <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
+           <li><a href="mailto:edrivethruvending@email.com subject= subject text"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
 </div>

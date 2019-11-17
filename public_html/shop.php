@@ -4,7 +4,7 @@
        
 <!----===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Shops</title>
 
 <!----=================== Mobile Phone Specific Meta's ======================== --->
 
@@ -65,7 +65,7 @@
      
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-     <span class="text">edrivethruvending@email.com</span>
+     <a href="mailto:edrivethruvending@email.com subject= subject text"><span class="text">edrivethruvending@email.com</span></a>
 </div>
      
      
@@ -723,7 +723,7 @@
           
           <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
           
-          <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
+          <li><a href="mailto:edrivethruvending@email.com subject= subject text"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
 </div>
@@ -789,7 +789,7 @@ powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 <script src="js/Login.js"></script>
-<script src="js/Shop Cart.js"></script>
+<script src="js/ShopCart.js"></script>
 <script src="js/bootstrap-show-password.js"></script>
 <script src="js/Modal Product.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s"></script>

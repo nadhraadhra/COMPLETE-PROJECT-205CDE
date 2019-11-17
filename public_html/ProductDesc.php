@@ -1,10 +1,66 @@
+
+<!----=============================================== Start PHP Code ================================================== --->    
+    
+<?php 
+
+session_start();
+
+$conn = mysqli_connect('localhost','root','root');
+
+mysqli_select_db($conn, 'edrivethruvending');
+
+//Check For Submission
+if(isset($_POST['submit'])){
+
+    
+    $conn = NULL;
+    $error = false;
+    
+    if($conn = mysqli_connect('localhost','root','root','edrivethruvending')) {
+        if($result = mysqli_query($conn,$sql)) {
+            if(mysqli_num_rows($result) == 1) {
+                $error = true;
+                
+            }
+        }
+    }
+    
+    if($error) {
+        
+        //Username is Exists
+        exit('a');
+        
+    } else {
+        
+        //Store User Credentials Details
+        
+        $sqli1 = "INSERT INTO userSubscribe (id, email) VALUES (NULL,'". $_POST['email'] ."');";
+        
+        if(mysqli_query($conn, $sqli1)) {
+            
+            //Successfully Registered
+            
+            header('location: ProductDesc.php');
+            exit();
+            
+        }
+    }
+    header('location: ProductDesc.php');
+}
+
+?>
+
+<!----=============================================== End of PHP Code ================================================== --->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
        
 <!----===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Product Details</title>
 
 <!----=================== Mobile Phone Specific Meta's ======================== --->
 
@@ -63,7 +119,7 @@
      
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-     <span class="text">edrivethruvending@email.com</span>
+     <a href="mailto:edrivethruvending@email.com subject= subject text"><span class="text">edrivethruvending@email.com</span></a>
 </div>
      
      
@@ -423,7 +479,7 @@
         
     <br>
     
-<form name="subscribeForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post" class="subscribe-form justify-content-center bg-light">
+<form name="subscribeForm" onsubmit="return validateForm()" method="post" class="subscribe-form justify-content-center bg-light">
 
      <label style="color:black">Email Address</label>
      <input type="text" name="email" class="form-control" style="border-color: black"  placeholder="Enter email address">
@@ -435,14 +491,14 @@
 </div>
 </div>
     
-    <input type="submit" value="Subscribe">
+    <button type="submit" name="submit" class="btn btn-red align-items-center" value=" ">Subscribe Now! </button>
     
 </div>
 </div>
 </div>
 
 <div class="d-flex-center text-center">
-  <a href="" class="btn btn-default btn-rounded mb-4" style="border: 2px solid black" data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe Now</a>
+  <a href="" class="btn btn-default btn-rounded mb-4" style="border: 2px solid black" style="color: white" data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe Now</a>
 </div>
     
 </section>
@@ -519,7 +575,7 @@
           
           <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
           
-          <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
+          <li><a href="mailto:edrivethruvending@email.com subject= subject text"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
 </div>
@@ -542,24 +598,7 @@
 <!--- =============================================  End of Copyright   ====================================================== --->
 
 <!--- =================================================   End of Footer ====================================================== --->
-
-<!--- ================================================== Start LiveChat Code ============================================================= --->
-
-<script type="text/javascript">
-  window.__lc = window.__lc || {};
-  window.__lc.license = 11413478;
-  (function() {
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-  })();
-</script>
-<noscript>
-<a href="https://www.livechatinc.com/chat-with/11413478/" rel="nofollow">Chat with us</a>,
-powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-</noscript>
-
-<!--- ================================================== End of LiveChat Code ============================================================= ---> 
+ 
 <!--- ================================================== Loader  ============================================================= --->
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -582,7 +621,7 @@ powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow
 <script src="js/scrollax.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/Login.js"></script>
-<script src="js/Shop Cart.js"></script>
+<script src="js/ShopCart.js"></script>
 <script src="js/Subscribe Part.js"></script>
 <script src="js/bootstrap-show-password.js"></script>
 

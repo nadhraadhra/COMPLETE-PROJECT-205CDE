@@ -1,11 +1,66 @@
-<?php?>       
+
+<!----=============================================== Start PHP Code ================================================== --->    
+    
+<?php 
+
+session_start();
+
+$conn = mysqli_connect('localhost','root','root');
+
+mysqli_select_db($conn, 'edrivethruvending');
+
+//Check For Submission
+if(isset($_POST['submit'])){
+
+    
+    $conn = NULL;
+    $error = false;
+    
+    if($conn = mysqli_connect('localhost','root','root','edrivethruvending')) {
+        if($result = mysqli_query($conn,$sql)) {
+            if(mysqli_num_rows($result) == 1) {
+                $error = true;
+                
+            }
+        }
+    }
+    
+    if($error) {
+        
+        //Username is Exists
+        exit('a');
+        
+    } else {
+        
+        //Store User Credentials Details
+        
+        $sqli1 = "INSERT INTO userSubscribe (id, email) VALUES (NULL,'". $_POST['email'] ."');";
+        
+        if(mysqli_query($conn, $sqli1)) {
+            
+            //Successfully Registered
+            
+            header('location: HomePage.php');
+            exit();
+            
+        }
+    }
+    header('location: HomePage.php');
+}
+
+?>
+
+<!----=============================================== End of PHP Code ================================================== --->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
 <!----===================== Basic That A Page Needed ========================== --->
 
-<title>E-DriveThru Vending</title>
+<title>E-DriveThru Vending Home Page</title>
 
 <!----=================== Mobile Phone Specific Meta's ======================== --->
 
@@ -67,7 +122,7 @@
      
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-     <span class="text">edrivethruvending@email.com</span>
+<a href="mailto:edrivethruvending@email.com subject= subject text"><span class="text">edrivethruvending@email.com</span></a>
 </div>
      
      
@@ -856,7 +911,7 @@
         
     <br>
     
-<form name="subscribeForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post" class="subscribe-form justify-content-center bg-light">
+<form name="subscribeForm" onsubmit="return validateForm()" method="post" class="subscribe-form justify-content-center bg-light">
 
      <label style="color:black">Email Address</label>
      <input type="text" name="email" class="form-control" style="border-color: black"  placeholder="Enter email address">
@@ -868,14 +923,14 @@
 </div>
 </div>
     
-    <input type="submit" value="Subscribe">
+    <button type="submit" name="submit" class="btn btn-red align-items-center" value=" ">Subscribe Now! </button>
     
 </div>
 </div>
 </div>
 
 <div class="d-flex-center text-center">
-  <a href="" class="btn btn-default btn-rounded mb-4" style="border: 2px solid black" data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe Now</a>
+  <a href="" class="btn btn-default btn-rounded mb-4" style="border: 2px solid black" style="color: white" data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe Now</a>
 </div>
     
 </section>
@@ -952,7 +1007,7 @@
           
           <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
           
-          <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
+          <li><a href="mailto:edrivethruvending@email.com subject= subject text"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
 </div>
