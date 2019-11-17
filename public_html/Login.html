@@ -72,9 +72,10 @@
      
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-     <span class="text">edrivethruvending@email.com</span>
-</div>
+<a href="mailto:edrivethruvending@email.com subject= subject text"><span class="text">edrivethruvending@email.com</span></a>
      
+
+</div>
      
     <li class="ftco-animate"><a href="https://twitter.com"><span class="icon-twitter"></span></a></li>
     <li class="ftco-animate"><a href="https://www.facebook.com"><span class="icon-facebook"></span></a></li>
@@ -245,10 +246,11 @@
 <div class="col-md">
 <div class="ftco-footer-widget mb-4">
 
+
           <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-          <li class="ftco-animate"><a href="https://www.twitter.com"><span class="icon-twitter"></span></a></li>
-          <li class="ftco-animate"><a href="https://www.facebook.com"><span class="icon-facebook"></span></a></li>
-          <li class="ftco-animate"><a href="https://www.instagram.com/?hl=en"><span class="icon-instagram"></span></a></li>
+            <li class="ftco-animate"><a href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.facebook.com"><span class="icon-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.instagram.com/?hl=en"><span class="icon-instagram"></span></a></li>
           </ul>
 </div>
 </div>
@@ -257,10 +259,10 @@
 <div class="ftco-footer-widget mb-4 ml-md-5">
      <h2 class="ftco-heading-2">Menu</h2>
           <ul class="list-unstyled">
-          <li><a href="shop.php" class="py-2 d-block">Shop</a></li>
-          <li><a href="Login.php" class="py-2 d-block">Login</a></li>
-          <li><a href="About.php" class="py-2 d-block">About</a></li>
-          <li><a href="ContactUs.php" class="py-2 d-block">Contact Us</a></li>
+          <li><a href="shop.html" class="py-2 d-block">Shop</a></li>
+          <li><a href="Login.html" class="py-2 d-block">Login</a></li>
+          <li><a href="About.html" class="py-2 d-block">About</a></li>
+          <li><a href="Contact Us.html" class="py-2 d-block">Contact Us</a></li>
           </ul>
 </div>
 </div>
@@ -278,7 +280,7 @@
      
           <ul class="list-unstyled">
           <li><a href="#" class="py-2 d-block">FAQs</a></li>
-          <li><a href="ContactUs.php" class="py-2 d-block">Contact</a></li>
+          <li><a href="#" class="py-2 d-block">Contact</a></li>
           </ul>
 </div>
 </div>
@@ -298,7 +300,7 @@
           
           <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
           
-          <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
+          <li><a href="mailto:edrivethruvending@email.com subject= subject text"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
 </div>
@@ -325,23 +327,6 @@
 <!--- =================================================   End of Footer ====================================================== --->
 
 
-<!--- ================================================== Start LiveChat Code ============================================================= --->
-
-<script type="text/javascript">
-  window.__lc = window.__lc || {};
-  window.__lc.license = 11413478;
-  (function() {
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-  })();
-</script>
-<noscript>
-<a href="https://www.livechatinc.com/chat-with/11413478/" rel="nofollow">Chat with us</a>,
-powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-</noscript>
-
-<!--- ================================================== End of LiveChat Code ============================================================= --->
 
 <!--- ================================================== Loader  ============================================================= --->
 
@@ -349,163 +334,7 @@ powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow
 
 <!--- ================================================== End of Loader  ======================================================= --->
 
-<!----================================================= Script's Source File ================================================== --->
 
-
-// =========================== Defining a function to display error message  ==========================================================//
-<script>
-
-function printError(elemId, hintMsg) 
-{
-    document.getElementById(elemId).innerHTML = hintMsg;
-}
-
-// =========================== Defining a function to validate the form ==========================================================//
-
-function validateForm() 
-{
-    
-// =========================== Retrieving the values of form elements  ==========================================================//
-    var name = document.signupForm.name.value;
-    var username = document.signupForm.username.value;
-    var email = document.signupForm.email.value;
-    var mobile = document.signupForm.mobile.value;
-    var country = document.signupForm.country.value;
-    var password = document.signupForm.password.value;
-    var confirmPassword = document.signupForm.confirmPassword.value;
-    
-   
-// =========================== Defining error variables with a default value ==========================================================//
-
-    var nameErr = usernameErr = emailErr = mobileErr = countryErr = passwordErr = confirmPasswordErr = true;
-    
-// =========================== Validate Name  ==========================================================//
-    
-      if(name == "") {
-        printError("nameErr", "Please enter your name");
-    } else {
-        var regex = /^[a-zA-Z\s]+$/;                
-        if(regex.test(name) === false) {
-            printError("nameErr", "Please enter a valid name");
-        } else {
-            printError("nameErr", "");
-            nameErr = false;
-        }
-    }
-    
-    
-    if(username == "") {
-        alert("Error:Name cannot be blank!")
-        printError("usernameErr", "Please enter your username of 6 to 20 characters");
-    } else {
-        var regex = /^\w{6,21}$/;                
-        if(regex.test(username) === false) {
-            printError("usernameErr", "Please enter a valid username");
-            
-        } else {
-            printError("usernameErr", "");
-            usernameErr = false;
-        }
-    }
-    
-// =========================== Validate Email Address  ==========================================================//
-    
-    
-    if(email == "") {
-        printError("emailErr", "Please enter your email address");
-    } else {
-        // Regular expression for basic email validation
-        var regex = /^\S+@\S+\.\S+$/;
-        if(regex.test(email) === false) {
-            printError("emailErr", "Please enter a valid email address");
-        } else{
-            printError("emailErr", "");
-            emailErr = false;
-        }
-    }
-    
-// =========================== Validate Mobile Number  ==========================================================//
-    
-    
-    if(mobile == "") {
-        printError("mobileErr", "Please enter your mobile number");
-    } else {
-        var regex = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
-        if(regex.test(mobile) === false) {
-            printError("mobileErr", "Please enter a valid 10 digit mobile number");
-        } else{
-            printError("mobileErr", "");
-            mobileErr = false;
-        }
-    }
-    
-        
-// =========================== Validate Country  ==========================================================//
-    
-    if(country == "Select") {
-        printError("countryErr", "Please select your country");
-    } else {
-        printError("countryErr", "");
-        countryErr = false;
-    }
-    
-// =========================== Validate Password  ==========================================================//
-    
-    if(password == "") {
-        printError("passwordErr", "Please enter valid password");
-    } else {
-        printError("passwordErr", "");
-        passwordErr = false;
-    }
-        
-// ============================ Regular expression for basic Password validation  ================================//
-        
-        var regex =   /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-        if(regex.test(password) === false) {
-            printError("passwordErr", "Please enter a valid password at least 8 characters long");
-        } else{
-            printError("passwordErr", "");
-            passwordErr = false;
-        }
-    
-    
-// =========================== Validate Confirm Password  ==========================================================//
-    
-    if(password != confirmPassword) {
-        printError("confirmPasswordErr", "Password confirmation doesn't match password. \n \n \n Password confirmation must match password");
-    } else {
-        printError("confirmPasswordErr", " ");
-        confirmPasswordErr = false;
-    }
-    
-    
-// =================  Prevent the form from being submitted if there are any errors===========================//
-    
-    if((nameErr || usernameErr || emailErr || mobileErr || countryErr || passwordErr || confirmPasswordErr) == true) {
-        return false;
-    } else {
-        
-// =================  Creating a string from input data for preview ==========================================//
-        
-        var dataPreview = "You've entered the following details: \n" +
-                          "Name: " + name + "\n" +
-                          "Username: " + username + "\n" +
-                          "Email Address: " + email + "\n" +
-                          "Mobile Number: " + mobile + "\n" +
-                          "Country: " + country + "\n" +
-                          "Password: " + password + "\n";
-        
-        
-// ================= Display input data in a dialog box before submitting the form ============================ //
-       
-        alert(dataPreview);
-    }
-};
-    
-    
-</script>   
-    
-  
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
