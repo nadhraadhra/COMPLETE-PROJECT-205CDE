@@ -1,12 +1,11 @@
-   
+
+
+
+
 <?php 
-
 session_start();
-
 $conn = mysqli_connect('localhost','root','root');
-
 mysqli_select_db($conn, 'edrivethruvending');
-
 //Check For Submission
 if(isset($_POST['submit'])){
     
@@ -48,11 +47,11 @@ if(isset($_POST['submit'])){
     }
     header('location: ContactUs.php');
 }
-
 ?>
 
-<!----=============================================== End of PHP Code ================================================== --->
 
+
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,14 +113,12 @@ if(isset($_POST['submit'])){
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
      <span class="text">+49 111 9992222</span>
-     
-<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-     <span class="text">+04 4000444</span>
 </div>
      
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-<a href="mailto:edrivethruvending@email.com subject= subject text"><span class="text">edrivethruvending@email.com</span></a>
+     <span class="text">edrivethruvending@email.com</span>
+</div>
      
     <li class="ftco-animate"><a href="https://twitter.com"><span class="icon-twitter"></span></a></li>
     <li class="ftco-animate"><a href="https://www.facebook.com"><span class="icon-facebook"></span></a></li>
@@ -199,7 +196,7 @@ if(isset($_POST['submit'])){
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -275,7 +272,7 @@ if(isset($_POST['submit'])){
 <div class="col-md-6 order-md-last d-flex">
 
 </div>
-<form name="contactForm" onsubmit="return validateForm()" method="post">
+<form name="contactForm" onSubmit="return validateForm()"  method="post">
 
 <div class="row">
      <label>Name</label>
@@ -410,7 +407,7 @@ if(isset($_POST['submit'])){
           <li><a href="#"><span class="icon icon-phone"></span><span class="text">+04 4000444</span></a></li>
           
           
-           <li><a href="mailto:edrivethruvending@email.com subject= subject text"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
+          <li><a href="#"><span class="icon icon-envelope"></span><span class="text">edrivethruvending@gmail.com</span></a></li>
           </ul>
 </div>
 </div>

@@ -142,7 +142,7 @@
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -166,7 +166,7 @@
 <div class="row no-gutters slider-text align-items-center justify-content-center">
 <div class="col-md-9 ftco-animate text-center">
      <p class="breadcrumbs"><span class="mr-2"><a href="HomePage.php">Home</a></span> <span class="mr-2"><a href="shop.php">Snack & Beverage </a></span></p>
-     <h1 class="mb-0 bread">Snacks and Beverages</h1>
+     <h1 class="mb-0 bread">Snacks</h1>
 </div>
 </div>
 </div>
@@ -207,7 +207,7 @@
      <h3 class="product-title">Mix Snacks</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR4.00</span><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM4.00</span><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -244,7 +244,7 @@
      <h3 class="product-title">Kit Kat</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -280,7 +280,7 @@
      <h3 class="product-title">Snickers Fun Size </h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div>
      
@@ -318,7 +318,7 @@
      <h3 class="product-title">Snicker Minis</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.50</span></p>
+     <p class="price"><span class="product-price">RM3.50</span></p>
 </div>
 </div>
      
@@ -355,7 +355,7 @@
      <h3 class="product-title">Kinder Beuno</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR4.00</span><span class="product-price">MYR3.20</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM4.00</span><span class="product-price">RM3.20</span></p>
 </div>
 </div>
      
@@ -393,7 +393,7 @@
      <h3 class="product-title">Taco Doritos</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div>
      
@@ -431,7 +431,7 @@
      <h3 class="product-title">Taco Fritos</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div>
      
@@ -468,7 +468,7 @@
      <h3 class="product-title">Taco Tostitos</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div>     
 
@@ -505,7 +505,7 @@
      <h3 class="product-title">Toblerone</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR4.00</span><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM4.00</span><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -540,7 +540,7 @@
      <h3 class="product-title">RS Peppermint</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div>     
 
@@ -576,7 +576,7 @@
      <h3 class="product-title">RS Dark Choco</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div> 
 
@@ -614,7 +614,7 @@
      <h3 class="product-title">RS Hazeulnut</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div> 
 

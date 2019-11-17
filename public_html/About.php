@@ -1,4 +1,4 @@
-<?php?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,7 +140,7 @@
         <div class="mini-cart-totals">
           <div id="total-price">
             <p>Total Price</p>
-            <span> MYR0.00 </span>
+            <span> RM0.00 </span>
           </div>
           <div id="total-items">
             <p>Total Items</p>

@@ -142,7 +142,7 @@
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -210,7 +210,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -245,7 +245,7 @@
      <h3 class="product-title">F&N Club Soda</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -281,7 +281,7 @@
      <h3 class="product-title">F&N Tonic Water</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -317,7 +317,7 @@
      <h3 class="product-title">F&N Ranger</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -353,7 +353,7 @@
      <h3 class="product-title">Mix Snacks</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR4.00</span><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM4.00</span><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -391,7 +391,7 @@
      <h3 class="product-title">Kit Kat</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -427,7 +427,7 @@
      <h3 class="product-title">Snickers Fun Size </h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div>
      
@@ -464,7 +464,7 @@
      <h3 class="product-title">Snicker Minis</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.50</span></p>
+     <p class="price"><span class="product-price">RM3.50</span></p>
 </div>
 </div>
      
@@ -501,7 +501,7 @@
      <h3 class="product-title">Maggi Tom Yumzz</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR3.60</span><span class="product-price">MYR2.88</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM3.60</span><span class="product-price">RM2.88</span></p>
 </div>
 </div>
      
@@ -538,7 +538,7 @@
      <h3 class="product-title">Maggi Ayam Bakar</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.60</span></p>
+     <p class="price"><span class="product-price">RM3.60</span></p>
 </div>
 </div>
      
@@ -572,7 +572,7 @@
      <h3 class="product-title">Maggi Curry Kaw</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.60</span></p>
+     <p class="price"><span class="product-price">RM3.60</span></p>
 </div>
 </div>
      
@@ -606,7 +606,7 @@
      <h3 class="product-title">Maggi Roasted</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.60</span></p>
+     <p class="price"><span class="product-price">RM3.60</span></p>
 </div>
 </div>
      

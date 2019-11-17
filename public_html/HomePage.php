@@ -198,7 +198,7 @@ if(isset($_POST['submit'])){
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -443,7 +443,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -479,7 +479,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">F&N Club Soda</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -515,7 +515,7 @@ if(isset($_POST['submit'])){
           <h3 class="product-title">Perrier Mineral Water</a></h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.60</span></p>
+     <p class="price"><span class="product-price">RM3.60</span></p>
 </div>
 </div>
      
@@ -552,7 +552,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">F&N Ranger</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -590,7 +590,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">Mix Snacks</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR4.00</span><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM4.00</span><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -627,7 +627,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">Ramen Hot Cheese</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR7.00</span></p>
+     <p class="price"><span class="product-price">RM7.00</span></p>
 </div>
 </div>
      
@@ -660,7 +660,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">Maggi Roasted</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.60</span></p>
+     <p class="price"><span class="product-price">RM3.60</span></p>
 </div>
 </div>
      
@@ -694,7 +694,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">Cheetos Flamin</a></h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div>
      
@@ -732,7 +732,7 @@ if(isset($_POST['submit'])){
      <span class="subheading">Place your order now on your favourite snacks and beverages that you want</span>
      <h2 class="mb-4">Deal of the day</h2>
      <h3><a href="#">Jumbo Snacks</a></h3>
-            <span class="price">MYR6.00 <a href="#">now MYR4.00 only</a></span>
+            <span class="price">RM6.00 <a href="#">now RM4.00 only</a></span>
 <div id="timer" class="d-flex mt-5 ">
 <div class="time" id="days"></div>
 <div class="time pl-3" id="hours"></div>

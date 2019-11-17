@@ -199,7 +199,7 @@ if(isset($_POST['submit'])){
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -315,7 +315,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">Mix Snacks</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR4.00</span><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM4.00</span><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -353,7 +353,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">Taco Tostitos</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.00</span></p>
+     <p class="price"><span class="product-price">RM4.00</span></p>
 </div>
 </div>     
 
@@ -388,7 +388,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">Ramen Hot Cheese</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR7.00</span></p>
+     <p class="price"><span class="product-price">RM7.00</span></p>
 </div>
 </div>
      
@@ -426,7 +426,7 @@ if(isset($_POST['submit'])){
      <h3 class="product-title">Season Chesnut</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      

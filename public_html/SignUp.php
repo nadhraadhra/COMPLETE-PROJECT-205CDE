@@ -209,7 +209,7 @@ if(isset($_POST['submit'])){
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -308,7 +308,7 @@ if(isset($_POST['submit'])){
 
     <br><br>
     <h6 style="text-align: center">
-        Already have an account? <a href="Login.html">Sign in</a>
+        Already have an account? <a href="Login.php">Sign in</a>
     </h6>
     
 </form>

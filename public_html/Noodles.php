@@ -140,7 +140,7 @@
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -165,7 +165,7 @@
 <div class="row no-gutters slider-text align-items-center justify-content-center">
 <div class="col-md-9 ftco-animate text-center">
      <p class="breadcrumbs"><span class="mr-2"><a href="HomePage.php">Home</a></span> <span class="mr-2"><a href="shop.php">Snack & Beverage </a></span></p>
-     <h1 class="mb-0 bread">Snacks and Beverages</h1>
+     <h1 class="mb-0 bread">Noodles</h1>
 </div>
 </div>
 </div>
@@ -208,7 +208,7 @@
      <h3 class="product-title">Maggi Tom Yumzz</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR3.60</span><span class="product-price">MYR2.88</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM3.60</span><span class="product-price">RM2.88</span></p>
 </div>
 </div>
      
@@ -246,7 +246,7 @@
      <h3 class="product-title">Maggi Ayam Bakar</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.60</span></p>
+     <p class="price"><span class="product-price">RM3.60</span></p>
 </div>
 </div>
      
@@ -280,7 +280,7 @@
      <h3 class="product-title">Maggi Curry Kaw</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.60</span></p>
+     <p class="price"><span class="product-price">RM3.60</span></p>
 </div>
 </div>
      
@@ -315,7 +315,7 @@
      <h3 class="product-title">Maggi Roasted</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR3.60</span></p>
+     <p class="price"><span class="product-price">RM3.60</span></p>
 </div>
 </div>
      
@@ -350,7 +350,7 @@
      <h3 class="product-title">Ramen Hot Cheese</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR7.00</span></p>
+     <p class="price"><span class="product-price">RM7.00</span></p>
 </div>
 </div>
      
@@ -385,7 +385,7 @@
      <h3 class="product-title">Ramen Hot Stew</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR7.00</span></p>
+     <p class="price"><span class="product-price">RM7.00</span></p>
 </div>
 </div>
      
@@ -421,7 +421,7 @@
      <h3 class="product-title">Samyang Chicken</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.50</span></p>
+     <p class="price"><span class="product-price">RM4.50</span></p>
 </div>
 </div>
      
@@ -457,7 +457,7 @@
      <h3 class="product-title">Samyang Cheese</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR4.50</span></p>
+     <p class="price"><span class="product-price">RM4.50</span></p>
 </div>
 </div>
      
@@ -494,7 +494,7 @@
      <h3 class="product-title">Maggi Ayam Special</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -530,7 +530,7 @@
      <h3 class="product-title">Maggi Letup Curry</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -566,7 +566,7 @@
      <h3 class="product-title">Maggi Asam Laksa</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -601,7 +601,7 @@
      <h3 class="product-title">Maggi Fried Fiesta</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      

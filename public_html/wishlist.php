@@ -141,7 +141,7 @@
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -202,7 +202,7 @@
      <h3>Fruit Tree Lychee</h3>
 
 </td>
-<td class="price">MYR2.50</td>
+<td class="price">RM2.50</td>
 						        
 <td class="quantity">
 <div class="input-group mb-3">
@@ -210,7 +210,7 @@
 </div>
 </td>
 
-<td class="total">MYR2.50</td>
+<td class="total">RM2.50</td>
 </tr>
 
 <!--- ************************************ End of First Row ******************************************** --->
@@ -225,14 +225,14 @@
 
 </td>
 						        
-<td class="price">MYR7.00</td>
+<td class="price">RM7.00</td>
 <td class="quantity">
 <div class="input-group mb-3">
 <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
 </div>
 </td>
 						        
-<td class="total">MYR7.00</td>
+<td class="total">RM7.00</td>
 </tr>
 
 <!--- ************************************ End of Second Row ******************************************** --->
@@ -247,14 +247,14 @@
 
 </td>
 						        
-<td class="price">MYR2.00</td>
+<td class="price">RM2.00</td>
 <td class="quantity">
 <div class="input-group mb-3">
 <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
 </div>
 </td>
 
-<td class="total">MYR2.00</td>
+<td class="total">RM2.00</td>
 </tr>
 
 <!--- ************************************ End Of Third Row ******************************************** --->
@@ -268,7 +268,7 @@
 
 </td>
 
-<td class="price">MYR3.20</td>
+<td class="price">RM3.20</td>
 <td class="quantity">
 <div class="input-group mb-3">
 <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
@@ -290,14 +290,14 @@
 
 </td>
 
-<td class="price">MYR2.00</td>
+<td class="price">RM2.00</td>
 <td class="quantity">
 <div class="input-group mb-3">
 <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
 </div>
 </td>
 
-<td class="total">MYR2.00</td>
+<td class="total">RM2.00</td>
 </tr>
 
 <!--- *****************************************  End of Fifth Row ******************************************** --->
@@ -313,14 +313,14 @@
 
 </td>
 						        
-<td class="price">MYR2.88</td>
+<td class="price">RM2.88</td>
 <td class="quantity">
 <div class="input-group mb-3">
 <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
 </div>
 </td>
 						        
-<td class="total">MYR2.88</td>
+<td class="total">RM2.88</td>
 </tr>
 
 
@@ -429,24 +429,6 @@
 
 <!--- =================================================   End of Footer ====================================================== --->
 
-
-<!--- ================================================== Start LiveChat Code ============================================================= --->
-
-<script type="text/javascript">
-  window.__lc = window.__lc || {};
-  window.__lc.license = 11413478;
-  (function() {
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-  })();
-</script>
-<noscript>
-<a href="https://www.livechatinc.com/chat-with/11413478/" rel="nofollow">Chat with us</a>,
-powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-</noscript>
-
-<!--- ================================================== End of LiveChat Code ============================================================= --->
 
 <!--- ================================================== Loader  ============================================================= --->
 

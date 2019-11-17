@@ -142,7 +142,7 @@
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -283,18 +283,18 @@
      <h3 class="billing-heading mb-4">Cart Total</h3>
      <p class="d-flex">
      <span>Subtotal</span>
-     <span>MYR5.00</span>
+     <span>RM5.00</span>
      </p>
      
      <p class="d-flex">
      <span>Discount</span>
-     <span>MYR2.00</span>
+     <span>RM2.00</span>
      </p>
      
      <hr>
      <p class="d-flex total-price">
      <span>Total</span>
-     <span>MYR3.00</span>
+     <span>RM3.00</span>
      </p>
 </div>
 </div>

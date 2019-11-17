@@ -210,7 +210,7 @@ if(isset($_POST['submit'])){
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -275,7 +275,7 @@ if(isset($_POST['submit'])){
 </div>
      
 <div class="login100-form-social flex-c-m">
-     <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+     <a href=""https://www.facebook.com"" class="login100-form-social-item flex-c-m bg1 m-r-5">
      <i class="fa fa-facebook-f" aria-hidden="true"></i>
      </a>
 

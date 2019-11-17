@@ -1,4 +1,4 @@
-<?php?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +43,7 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 
-<link rel="stylesheet" href="css/Shop Cart.css">
+<link rel="stylesheet" href="css/ShopCart.css">
 
 </head>
 
@@ -141,7 +141,7 @@
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -165,7 +165,7 @@
 <div class="row no-gutters slider-text align-items-center justify-content-center">
 <div class="col-md-9 ftco-animate text-center">
      <p class="breadcrumbs"><span class="mr-2"><a href="HomePage.php">Home</a></span> <span class="mr-2"><a href="shop.php">Snack & Beverage </a></span></p>
-     <h1 class="mb-0 bread">Snacks and Beverages</h1>
+     <h1 class="mb-0 bread">Beverages</h1>
 </div>
 </div>
 </div>
@@ -206,7 +206,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -241,7 +241,7 @@
      <h3 class="product-title">F&N Club Soda</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -277,7 +277,7 @@
      <h3 class="product-title">F&N Tonic Water</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -313,7 +313,7 @@
      <h3 class="product-title">F&N Ranger</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -348,7 +348,7 @@
      <h3 class="product-title">Season Chesnut</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="product-price">RM2.00</span></p>
 </div>
 </div>
      
@@ -384,7 +384,7 @@
      <h3 class="product-title">F&N Grass Jelly</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.00</span></p>
+     <p class="price"><span class="product-price">RM2.00</span></p>
 </div>
 </div>
 
@@ -419,7 +419,7 @@
      <h3 class="product-title">Oyoshi Black Tea</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
 
@@ -454,7 +454,7 @@
      <h3 class="product-title">Season Mango</a></h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
 
@@ -488,7 +488,7 @@
      <h3 class="product-title">Fruit Tree Orange</a></h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -522,7 +522,7 @@
      <h3 class="product-title">Fruit Tree Lychee</a></h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -557,7 +557,7 @@
      <h3 class="product-title">Fruit Tree Mango</a></h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      
@@ -592,7 +592,7 @@
      <h3 class="product-title">Fruit Tree Aloe Vera</a></h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="product-price">MYR2.50</span></p>
+     <p class="price"><span class="product-price">RM2.50</span></p>
 </div>
 </div>
      

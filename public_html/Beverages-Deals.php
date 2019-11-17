@@ -139,7 +139,7 @@
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> MYR0.00 </span>
+    <span> RM0.00 </span>
 </div>
 
 <div id="total-items">
@@ -200,7 +200,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -235,7 +235,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -271,7 +271,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -306,7 +306,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -342,7 +342,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -378,7 +378,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -414,7 +414,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
@@ -450,7 +450,7 @@
      <h3 class="product-title">F&N Lychee 2</h3>
 <div class="d-flex-center">
 <div class="product-price">
-     <p class="price"><span class="mr-2 price-dc">MYR5.50</span><span class="product-price">MYR4.40</span></p>
+     <p class="price"><span class="mr-2 price-dc">RM5.50</span><span class="product-price">RM4.40</span></p>
 </div>
 </div>
      
