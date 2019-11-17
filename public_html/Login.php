@@ -1,4 +1,3 @@
-
 <!----=============================================== Start PHP Code ================================================== --->    
     
 <?php 
@@ -145,7 +144,6 @@ if(isset($_POST['submit'])){
 
 
 
-
 <!--- =========================== Second Navigation ============================ --->
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-black ftco-navbar-light color-white" id="ftco-navbar">
@@ -210,7 +208,7 @@ if(isset($_POST['submit'])){
 <div class="mini-cart-totals">
 <div id="total-price">
     <p>Total Price</p>
-    <span> RM0.00 </span>
+    <span> MYR0.00 </span>
 </div>
 
 <div id="total-items">
@@ -275,7 +273,7 @@ if(isset($_POST['submit'])){
 </div>
      
 <div class="login100-form-social flex-c-m">
-     <a href=""https://www.facebook.com"" class="login100-form-social-item flex-c-m bg1 m-r-5">
+     <a href="https://www.facebook.com" class="login100-form-social-item flex-c-m bg1 m-r-5">
      <i class="fa fa-facebook-f" aria-hidden="true"></i>
      </a>
 
@@ -388,6 +386,8 @@ if(isset($_POST['submit'])){
 
 <!--- ================================================== End of Loader  ======================================================= --->
 
+<!----================================================= Script's Source File ================================================== --->
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -417,3 +417,5 @@ if(isset($_POST['submit'])){
 
 </body>
 </html>
+
+ 
