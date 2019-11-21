@@ -1,3 +1,4 @@
+
 <!----=============================================== Start PHP Code ================================================== --->    
     
 <?php 
@@ -10,44 +11,30 @@ mysqli_select_db($conn, 'edrivethruvending');
 
 //Check For Submission
 if(isset($_POST['submit'])){
-    
-    //Modify
-    
-    $sqli1 = "SELECT * FROM users WHERE username='". $_POST['username'] ."';";
-    
-    $conn = NULL;
-    $error = false;
-    
-    if($conn = mysqli_connect('localhost','root','root','edrivethruvending')) {
-        if($result = mysqli_query($conn,$sql)) {
-            if(mysqli_num_rows($result) > 0) {
-                $error = true;
-                
-            }
-        }
-    }
-    
-    if($error) {
-        
-        //Username is Exists
-        exit('a');
-        
-    } else {
-        
-        //Store User Credentials Details
-        
-        $sqli1 = "INSERT INTO users (userId, name, username, email, mobile, country, password, confirmPassword) VALUES (NULL,'". $_POST['name'] ."', '". $_POST['username'] ."', '". $_POST['email'] ."', '". $_POST['mobile'] ."', '". $_POST['country'] ."', '". $_POST['password'] ."', '". $_POST['confirmPassword'] ."');";
-        
-        if(mysqli_query($conn, $sqli1)) {
-            
-            //Successfully Registered
-            
-            header('location: Login.php');
-            exit();
-            
-        }
-    }
+
+$name = $_POST['name'];
+$username = $_POST['username'];
+$email = $_POST['email'];
+$mobile = $_POST['mobile'];
+$country = $_POST['country'];
+$password = $_POST['password'];
+$confirmPassword = $_POST['confirmPassword'];
+
+
+
+$sqli1 = "SELECT * FROM users WHERE username= '$username' && password = '$password'";
+
+$result = mysqli_query($conn, $sqli1);
+
+$num = mysqli_num_rows($result);
+
+if($num == true){
+    $_SESSION['username'] = $username;
+    header('location: HomePage.php');
+} else {
     header('location: Login.php');
+}
+
 }
 
 ?>
@@ -237,7 +224,7 @@ if(isset($_POST['submit'])){
 
 <div class="input-group">
      <label>Username</label>
-     <input type="text" name="username">
+     <input type="text" name="username" value="">
 <div class="error" id="usernameErr"></div>
 </div>
     
@@ -259,7 +246,7 @@ if(isset($_POST['submit'])){
 </div>
 
 <div class="input-group">
-    <button type="submit" name="submit" class="btn btn-red align-items-center"> Login </button>
+    <button type="submit" name="submit" value="login" class="btn btn-red align-items-center"> Login </button>
 </div>
     
 <div class="text-center p-t-46 p-b-20">    

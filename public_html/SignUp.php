@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     
     //Modify
     
-    $sqli1 = "SELECT * FROM users WHERE username='". $_POST['username'] ."';";
+    //$sqli1 = "SELECT * FROM users WHERE username='". $_POST['username'] ."';";
     
     $conn = NULL;
     $error = false;

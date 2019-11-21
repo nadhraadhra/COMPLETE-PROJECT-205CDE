@@ -324,7 +324,7 @@ if(isset($_POST['submit'])){
     <br>
      
 <div class="input-group">
-    <button type="submit" onClick="window.location='http://yoursite.com/index.php';" name="cancel" class="btn btn-red align-items-center"> Cancel </button>
+    <button type="submit" onClick="window.location='ContactUs.php';" name="cancel" class="btn btn-red align-items-center"> Cancel </button>
 </div>
 </form>
 

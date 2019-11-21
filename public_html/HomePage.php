@@ -26,13 +26,12 @@ if(isset($_POST['submit'])){
     }
     
     if($error) {
-        
-        //Username is Exists
+
         exit('a');
         
     } else {
         
-        //Store User Credentials Details
+        //Store user Subscribe Email
         
         $sqli1 = "INSERT INTO userSubscribe (id, email) VALUES (NULL,'". $_POST['email'] ."');";
         
@@ -48,11 +47,10 @@ if(isset($_POST['submit'])){
     header('location: HomePage.php');
 }
 
+
 ?>
 
-<!----=============================================== End of PHP Code ================================================== --->
-
-
+<!----=============================================== End of PHP Code ================================================== ---
 
 <!DOCTYPE html>
 <html lang="en">
@@ -104,8 +102,7 @@ if(isset($_POST['submit'])){
 </head>
 
 <body class="goto-here">
-
-
+    
 
 <!--- =========================== Upper Navigation ============================ --->
 <div class="py-1 bg-color-1">
@@ -118,12 +115,15 @@ if(isset($_POST['submit'])){
      <span class="text">+49 111 9992222</span>
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
      <span class="text">+04 4000444</span>
+
 </div>
-     
+    
 <div class="col-md pr-4 d-flex topper align-items-center">
 <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
 <a href="mailto:edrivethruvending@email.com subject= subject text"><span class="text">edrivethruvending@email.com</span></a>
 </div>
+    
+ 
      
      
     <li class="ftco-animate"><a href="https://twitter.com"><span class="icon-twitter"></span></a></li>
@@ -175,11 +175,12 @@ if(isset($_POST['submit'])){
        <li class="nav-item"><a href="ContactUs.php" class="nav-link">Contact Us</a></li>
        
        <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-person"></span>My Account</a>
+       <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-person"></span><?php echo $_SESSION['username']; ?></a>
 
 <div class="dropdown-menu" aria-labelledby="dropdown06">
        <a class="dropdown-item" href="Login.php">Login</a>
        <a class="dropdown-item" href="SignUp.php">Sign Up</a>
+       <a class ="dropdown-item" href="Logout.php">Log out</a>
        
 </div>
        </li>
@@ -207,7 +208,8 @@ if(isset($_POST['submit'])){
 </div>
 </div>
 </div>
-</div>       
+</div>
+
         
 </ul>
 </div>
