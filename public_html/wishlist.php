@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,11 +126,12 @@
        <li class="nav-item"><a href="ContactUs.php" class="nav-link">Contact Us</a></li>
        
        <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-person"></span>My Account</a>
+       <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-person"></span><?php echo $_SESSION['username']; ?></a>
 
 <div class="dropdown-menu" aria-labelledby="dropdown06">
        <a class="dropdown-item" href="Login.php">Login</a>
        <a class="dropdown-item" href="SignUp.php">Sign Up</a>
+       <a class ="dropdown-item" href="Logout.php">Log out <?php echo $_SESSION['username']; ?></a>
        
 </div>
        </li>

@@ -180,7 +180,7 @@ if(isset($_POST['submit'])){
 <div class="dropdown-menu" aria-labelledby="dropdown06">
        <a class="dropdown-item" href="Login.php">Login</a>
        <a class="dropdown-item" href="SignUp.php">Sign Up</a>
-       <a class ="dropdown-item" href="Logout.php">Log out</a>
+       <a class ="dropdown-item" href="Logout.php">Log out <?php echo $_SESSION['username']; ?></a>
        
 </div>
        </li>
