@@ -82,19 +82,18 @@ function validateForm()
 
     // =========================== Validate Message  ==========================================================//
     
-    
+     
     if(message == "") {
         printError("messageErr", "Please enter your message");
     } else {
-        var regex = /^\w{6}$/;                
-        if(regex.test(message) === false) {
-            printError("messageErr", "Invalid used of characters");
+        var regex = /^[a-zA-Z0-9]*$/;                
+        if(regex.test(message) === true) {
+            printError("messageErr", "Please enter a valid message");
         } else {
             printError("messageErr", "");
             messageErr = false;
         }
     }
-    
 // =================  Prevent the form from being submitted if there are any errors===========================//
     
     if((nameErr || emailErr || mobileErr || countryErr || messageErr) == true) {

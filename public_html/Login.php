@@ -149,7 +149,7 @@ if($num == true){
 <div class="dropdown-menu" aria-labelledby="dropdown04">
        <a class="dropdown-item" href="shop.php">Snack & Beverage</a>
        <a class="dropdown-item" href="wishlist.php">Wishlist</a>
-       <a class="dropdown-item" href="ProductDesc.php">Single Product</a>
+       <a class="dropdown-item" href="ProductDesc.php">Product Details</a>
        <a class="dropdown-item" href="checkout.php">Checkout</a>
        <a class="dropdown-item" href="QR-Scan.php">QR Scan</a>
        

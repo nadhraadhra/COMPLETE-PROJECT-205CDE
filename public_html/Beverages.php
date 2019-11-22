@@ -100,11 +100,11 @@ session_start();
        <li class="nav-item active"><a href="HomePage.php" class="nav-link"><span class="icon-home"></span>Home</a></li>
        <li class="nav-item dropdown">
        <a class="nav-link dropdown-toggle" href="Shop.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-    
+
 <div class="dropdown-menu" aria-labelledby="dropdown04">
        <a class="dropdown-item" href="shop.php">Snack & Beverage</a>
        <a class="dropdown-item" href="wishlist.php">Wishlist</a>
-       <a class="dropdown-item" href="ProductDesc.php">Single Product</a>
+       <a class="dropdown-item" href="ProductDesc.php">Product Details</a>
        <a class="dropdown-item" href="checkout.php">Checkout</a>
        <a class="dropdown-item" href="QR-Scan.php">QR Scan</a>
        

@@ -109,7 +109,7 @@ session_start();
 <div class="dropdown-menu" aria-labelledby="dropdown04">
        <a class="dropdown-item" href="shop.php">Snack & Beverage</a>
        <a class="dropdown-item" href="wishlist.php">Wishlist</a>
-       <a class="dropdown-item" href="ProductDesc.php">Single Product</a>
+       <a class="dropdown-item" href="ProductDesc.php">Product Details</a>
        <a class="dropdown-item" href="checkout.php">Checkout</a>
        <a class="dropdown-item" href="QR-Scan.php">QR Scan</a>
        
@@ -182,7 +182,7 @@ session_start();
     Having trouble? <a href="ContactUs.php">Contact us</a>
     </h5>
     <p class="lead text-center">
-    <a class="btn btn-primary btn-sm" href="QR Scan.php" role="button">QR Code Page</a>
+    <a class="btn btn-primary btn-sm" href="QR-Scan.php" role="button">QR Code Page</a>
     </p>
 </div>
 

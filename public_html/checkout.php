@@ -339,7 +339,7 @@ session_start();
 </div>
 </div>
 </div>
-     <p><a href="Thank You.php"class="btn btn-primary py-3 px-4">Place an order</a></p>
+     <p><a href="ThankYou.php"class="btn btn-primary py-3 px-4">Place an order</a></p>
 </div>
 </div>
 </div>
