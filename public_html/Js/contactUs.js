@@ -62,15 +62,14 @@ function validateForm()
     if(mobile == "") {
         printError("mobileErr", "Please enter your mobile number");
     } else {
-        var regex = /^[0-10]\d{10}$/;
-        if(regex.test(mobile) === false) {
+        var phoneno = /^[0-12]\d{9}$/;
+        if(phoneno.test(mobile) === false) {
             printError("mobileErr", "Please enter a valid 10 digit mobile number");
         } else{
             printError("mobileErr", "");
             mobileErr = false;
         }
     }
-    
         
 // =========================== Validate Country  ==========================================================//
     
@@ -88,7 +87,7 @@ function validateForm()
         printError("messageErr", "Please enter your message");
     } else {
         var regex = /^[a-zA-Z0-9]*$/;                
-        if(regex.test(message) === false) {
+        if(regex.test(message) === true) {
             printError("messageErr", "Please enter a valid message");
         } else {
             printError("messageErr", "");

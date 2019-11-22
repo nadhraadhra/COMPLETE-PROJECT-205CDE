@@ -214,3 +214,18 @@ html{}
     color:#fff;
 }
 
+.signout-button {
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 5px;
+  position: relative;
+  top: 3px;
+  background: none;
+  border-width: 2px;
+  border-color: #f33866;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+}
+
